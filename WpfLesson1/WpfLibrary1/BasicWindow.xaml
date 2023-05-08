@@ -6,9 +6,23 @@
         xmlns:local="clr-namespace:WpfLibrary1"
         mc:Ignorable="d"
         Title="BasicWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition "Auto"/>
-        </Grid.RowDefinitions>
-    </Grid>
+    <StackPanel>
+        <Border BorderBrush="Red"
+                BorderThickness="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" FontSize="40"
+                        Content="Samsung"/>
+                <Button Grid.Row="1" Grid.ColumnSpan="2" FontSize="50"
+                        Content="{Binding Name}"/>
+            </Grid>
+        </Border>
+    </StackPanel>
 </Window>

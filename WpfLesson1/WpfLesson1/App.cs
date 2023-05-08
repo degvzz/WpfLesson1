@@ -14,7 +14,7 @@ namespace WpfLesson1
         {
             base.OnStartup(e);
 
-            BasicWindow win = new();
+            StyleWindow win = new();
             win.ShowDialog();
         }
     }

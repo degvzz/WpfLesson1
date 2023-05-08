@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfLibrary1
 {
     /// <summary>
-    /// BasicWindow.xaml에 대한 상호 작용 논리
+    /// StyleWindow.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class BasicWindow : Window
+    public partial class StyleWindow : Window
     {
-        public BasicWindow()
+        public StyleWindow()
         {
             InitializeComponent();
             DataContext = new BasicViewModel();
